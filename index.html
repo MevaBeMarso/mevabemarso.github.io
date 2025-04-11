@@ -1,1 +1,1040 @@
-"Marso" 
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mẹ và Bé Marso - Đồng hành cùng hành trình làm mẹ</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            color: #333;
+            background-color: #fff;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #FFE8F5 0%, #F8EFFF 100%);
+        }
+        .service-card {
+            transition: all 0.3s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+        .primary-color {
+            color: #FF6B98;
+        }
+        .secondary-color {
+            color: #9B4DEA;
+        }
+        .primary-bg {
+            background-color: #FF6B98;
+        }
+        .secondary-bg {
+            background-color: #9B4DEA;
+        }
+        .light-bg {
+            background-color: #FFF6FB;
+        }
+        .btn-primary {
+            background-color: #FF6B98;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #FF4A85;
+            transform: translateY(-2px);
+        }
+        .btn-secondary {
+            background-color: #9B4DEA;
+            color: white;
+            transition: all 0.3s ease;
+        }
+        .btn-secondary:hover {
+            background-color: #8A3BD9;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <!-- Logo Placeholder -->
+                <div class="w-48 h-12 flex items-center">
+                    <div class="font-bold text-xl primary-color">
+                        <span class="secondary-color">Mẹ</span> và <span class="primary-color">Bé</span> Marso
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <div class="md:hidden">
+                <button id="mobile-menu-button" class="focus:outline-none">
+                    <i class="fas fa-bars text-2xl primary-color"></i>
+                </button>
+            </div>
+            
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#gioi-thieu" class="font-medium hover:text-pink-500 transition-colors">Giới thiệu</a>
+                <a href="#dich-vu" class="font-medium hover:text-pink-500 transition-colors">Dịch vụ</a>
+                <a href="#san-pham" class="font-medium hover:text-pink-500 transition-colors">Sản phẩm</a>
+                <a href="#affiliate" class="font-medium hover:text-pink-500 transition-colors">Affiliate</a>
+                <a href="#testimonials" class="font-medium hover:text-pink-500 transition-colors">Đánh giá</a>
+                <a href="#lien-he" class="btn-primary px-4 py-2 rounded-full font-medium">Liên hệ ngay</a>
+            </nav>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white w-full">
+            <div class="container mx-auto px-4 py-3 flex flex-col space-y-4">
+                <a href="#gioi-thieu" class="font-medium hover:text-pink-500 transition-colors">Giới thiệu</a>
+                <a href="#dich-vu" class="font-medium hover:text-pink-500 transition-colors">Dịch vụ</a>
+                <a href="#san-pham" class="font-medium hover:text-pink-500 transition-colors">Sản phẩm</a>
+                <a href="#affiliate" class="font-medium hover:text-pink-500 transition-colors">Affiliate</a>
+                <a href="#testimonials" class="font-medium hover:text-pink-500 transition-colors">Đánh giá</a>
+                <a href="#lien-he" class="btn-primary px-4 py-2 rounded-full font-medium text-center">Liên hệ ngay</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient pt-28 pb-16 md:pt-32 md:pb-24">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-8 md:mb-0">
+                    <h1 class="text-3xl md:text-5xl font-bold mb-6">
+                        <span class="secondary-color">Đồng hành</span> cùng <span class="primary-color">hành trình làm mẹ</span>
+                    </h1>
+                    <p class="text-lg md:text-xl mb-8 leading-relaxed">
+                        Mẹ và Bé Marso - hệ sinh thái toàn diện kết nối mẹ và bé với những sản phẩm, dịch vụ chất lượng cao từ các thương hiệu uy tín.
+                    </p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#san-pham" class="btn-primary px-6 py-3 rounded-full font-medium text-center">Khám phá sản phẩm</a>
+                        <a href="#dich-vu" class="btn-secondary px-6 py-3 rounded-full font-medium text-center">Tìm hiểu dịch vụ</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="relative">
+                        <div class="w-full h-64 md:h-96 bg-pink-100 rounded-lg flex items-center justify-center">
+                            <div class="text-center">
+                                <i class="fas fa-baby text-6xl primary-color mb-4"></i>
+                                <p class="text-gray-600">Hình ảnh gia đình hạnh phúc</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Giới thiệu -->
+    <section id="gioi-thieu" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Về <span class="primary-color">Mẹ và Bé</span> <span class="secondary-color">Marso</span></h2>
+                <p class="text-lg max-w-3xl mx-auto">Chúng tôi là hệ sinh thái toàn diện, kết nối mẹ và bé với những sản phẩm chất lượng, cùng kiến thức chăm sóc con cái chuyên sâu.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div>
+                    <div class="w-full h-64 md:h-96 bg-purple-100 rounded-lg flex items-center justify-center">
+                        <div class="text-center">
+                            <i class="fas fa-store text-6xl secondary-color mb-4"></i>
+                            <p class="text-gray-600">Hình ảnh cửa hàng Marso</p>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Tầm nhìn của chúng tôi</h3>
+                    <p class="mb-4">Trở thành một hệ sinh thái toàn cầu:</p>
+                    <ul class="space-y-3 mb-6">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Sàn affiliate cho các sản phẩm mẹ & bé, gia dụng, chăm sóc sức khỏe.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Hệ thống bán hàng dành cho KOC, cộng tác viên, người bán dropship.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Đơn vị sản xuất nội dung media trên TikTok, YouTube, Facebook.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                            <span>Đối tác marketing chiến lược đồng hành cùng các nhãn hàng.</span>
+                        </li>
+                    </ul>
+                    <h3 class="text-2xl font-bold mb-4">Giá trị cốt lõi</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                        <div class="bg-pink-50 p-3 rounded-lg text-center">
+                            <i class="fas fa-bolt primary-color text-xl mb-2"></i>
+                            <p class="font-medium">Tinh gọn</p>
+                        </div>
+                        <div class="bg-purple-50 p-3 rounded-lg text-center">
+                            <i class="fas fa-sync-alt secondary-color text-xl mb-2"></i>
+                            <p class="font-medium">Linh hoạt</p>
+                        </div>
+                        <div class="bg-blue-50 p-3 rounded-lg text-center">
+                            <i class="fas fa-heart text-blue-500 text-xl mb-2"></i>
+                            <p class="font-medium">Trung thực</p>
+                        </div>
+                        <div class="bg-green-50 p-3 rounded-lg text-center">
+                            <i class="fas fa-hands-helping text-green-500 text-xl mb-2"></i>
+                            <p class="font-medium">Tận tâm</p>
+                        </div>
+                        <div class="bg-yellow-50 p-3 rounded-lg text-center md:col-span-2">
+                            <i class="fas fa-brain text-yellow-500 text-xl mb-2"></i>
+                            <p class="font-medium">Hiểu sâu sắc khách hàng</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dịch vụ -->
+    <section id="dich-vu" class="py-16 light-bg">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Dịch vụ <span class="primary-color">chính</span></h2>
+                <p class="text-lg max-w-3xl mx-auto">Mẹ và Bé Marso cung cấp các dịch vụ toàn diện cho cả khách hàng cá nhân và doanh nghiệp</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Dịch vụ 1 -->
+                <div class="service-card bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="p-6">
+                        <div class="w-16 h-16 rounded-full primary-bg flex items-center justify-center mb-4 mx-auto">
+                            <i class="fas fa-shopping-cart text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-center">Sàn Affiliate</h3>
+                        <p class="text-gray-600 mb-4 text-center">
+                            Kết nối các sản phẩm mẹ & bé, gia dụng, chăm sóc sức khỏe với người tiêu dùng thông qua mạng lưới affiliate.
+                        </p>
+                        <div class="mt-4 text-center">
+                            <a href="#affiliate" class="inline-block border-b-2 border-pink-500 text-pink-500 font-medium hover:text-pink-600 transition-colors">Tìm hiểu thêm</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dịch vụ 2 -->
+                <div class="service-card bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="p-6">
+                        <div class="w-16 h-16 rounded-full secondary-bg flex items-center justify-center mb-4 mx-auto">
+                            <i class="fas fa-users text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-center">Hệ Thống Bán Hàng</h3>
+                        <p class="text-gray-600 mb-4 text-center">
+                            Hỗ trợ KOC, cộng tác viên và người bán dropship phát triển kinh doanh với quy trình đơn giản.
+                        </p>
+                        <div class="mt-4 text-center">
+                            <a href="#koc" class="inline-block border-b-2 border-purple-500 text-purple-500 font-medium hover:text-purple-600 transition-colors">Tìm hiểu thêm</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dịch vụ 3 -->
+                <div class="service-card bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="p-6">
+                        <div class="w-16 h-16 rounded-full primary-bg flex items-center justify-center mb-4 mx-auto">
+                            <i class="fas fa-video text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-center">Sản Xuất Nội Dung</h3>
+                        <p class="text-gray-600 mb-4 text-center">
+                            Đơn vị chuyên nghiệp sản xuất nội dung media chất lượng cao trên TikTok, YouTube, Facebook.
+                        </p>
+                        <div class="mt-4 text-center">
+                            <a href="#media" class="inline-block border-b-2 border-pink-500 text-pink-500 font-medium hover:text-pink-600 transition-colors">Tìm hiểu thêm</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Dịch vụ 4 -->
+                <div class="service-card bg-white rounded-xl shadow-md overflow-hidden">
+                    <div class="p-6">
+                        <div class="w-16 h-16 rounded-full secondary-bg flex items-center justify-center mb-4 mx-auto">
+                            <i class="fas fa-handshake text-white text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold mb-3 text-center">Đối Tác Marketing</h3>
+                        <p class="text-gray-600 mb-4 text-center">
+                            Đồng hành cùng các nhãn hàng trong xây dựng và triển khai kế hoạch truyền thông hiệu quả.
+                        </p>
+                        <div class="mt-4 text-center">
+                            <a href="#marketing" class="inline-block border-b-2 border-purple-500 text-purple-500 font-medium hover:text-purple-600 transition-colors">Tìm hiểu thêm</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sản phẩm nổi bật -->
+    <section id="san-pham" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Sản phẩm <span class="secondary-color">nổi bật</span></h2>
+                <p class="text-lg max-w-3xl mx-auto">Các sản phẩm chất lượng cao, đảm bảo an toàn cho mẹ và bé</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Sản phẩm 1 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:shadow-lg hover:-translate-y-1">
+                    <div class="w-full h-48 bg-yellow-100 flex items-center justify-center">
+                        <div class="text-center">
+                            <i class="fas fa-baby-carriage text-4xl text-yellow-500"></i>
+                            <p class="text-gray-600 mt-2">Hình ảnh sản phẩm sữa</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Sữa Công Thức Cao Cấp</h3>
+                        <p class="text-gray-600 mb-4">Dòng sản phẩm sữa công thức nhập khẩu, giàu dưỡng chất, hỗ trợ phát triển toàn diện cho bé.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-bold primary-color">Từ 450.000 VNĐ</span>
+                            <a href="#" class="btn-primary px-4 py-2 rounded-lg text-sm font-medium">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sản phẩm 2 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:shadow-lg hover:-translate-y-1">
+                    <div class="w-full h-48 bg-green-100 flex items-center justify-center">
+                        <div class="text-center">
+                            <i class="fas fa-pills text-4xl text-green-500"></i>
+                            <p class="text-gray-600 mt-2">Hình ảnh thực phẩm chức năng</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Thực Phẩm Chức Năng Cho Mẹ</h3>
+                        <p class="text-gray-600 mb-4">Bổ sung đầy đủ dinh dưỡng thiết yếu cho mẹ trong thời kỳ mang thai và sau sinh.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-bold primary-color">Từ 350.000 VNĐ</span>
+                            <a href="#" class="btn-primary px-4 py-2 rounded-lg text-sm font-medium">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Sản phẩm 3 -->
+                <div class="bg-white rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:shadow-lg hover:-translate-y-1">
+                    <div class="w-full h-48 bg-blue-100 flex items-center justify-center">
+                        <div class="text-center">
+                            <i class="fas fa-pump-soap text-4xl text-blue-500"></i>
+                            <p class="text-gray-600 mt-2">Hình ảnh đồ dùng trẻ em</p>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Đồ Dùng Vệ Sinh Cho Bé</h3>
+                        <p class="text-gray-600 mb-4">Dòng sản phẩm an toàn, lành tính, không chất bảo quản, phù hợp với làn da nhạy cảm của bé.</p>
+                        <div class="flex justify-between items-center">
+                            <span class="text-lg font-bold primary-color">Từ 120.000 VNĐ</span>
+                            <a href="#" class="btn-primary px-4 py-2 rounded-lg text-sm font-medium">Xem chi tiết</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="btn-secondary px-6 py-3 rounded-full font-medium inline-block">Xem tất cả sản phẩm</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dịch vụ B2B -->
+    <section id="b2b" class="py-16 light-bg">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Dịch vụ <span class="secondary-color">B2B</span></h2>
+                <p class="text-lg max-w-3xl mx-auto">Giải pháp marketing toàn diện cho các nhãn hàng và doanh nghiệp</p>
+            </div>
+            
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-12">
+                <div class="bg-white rounded-xl shadow-md p-8">
+                    <h3 class="text-2xl font-bold mb-4">Tư Vấn & Triển Khai Marketing</h3>
+                    <p class="mb-6">Chúng tôi cung cấp các gói dịch vụ marketing toàn diện, được thiết kế riêng cho từng nhãn hàng, giúp tối ưu hiệu quả truyền thông và tăng doanh số.</p>
+                    
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3 text-xl"></i>
+                            <div>
+                                <h4 class="font-bold">Chiến lược marketing tổng thể</h4>
+                                <p class="text-gray-600">Xây dựng định vị thương hiệu, kế hoạch truyền thông, và chiến lược content marketing.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3 text-xl"></i>
+                            <div>
+                                <h4 class="font-bold">Quản lý chiến dịch KOL/KOC</h4>
+                                <p class="text-gray-600">Lựa chọn, điều phối và đánh giá hiệu quả hợp tác với các KOL/KOC phù hợp.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3 text-xl"></i>
+                            <div>
+                                <h4 class="font-bold">Phân tích dữ liệu và báo cáo</h4>
+                                <p class="text-gray-600">Theo dõi, đánh giá và tối ưu hiệu quả các chiến dịch marketing.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#lien-he" class="btn-secondary px-6 py-3 rounded-lg font-medium inline-block">Nhận tư vấn</a>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-md p-8">
+                    <h3 class="text-2xl font-bold mb-4">Sản Xuất Nội Dung Media</h3>
+                    <p class="mb-6">Đội ngũ sản xuất nội dung chuyên nghiệp, với kinh nghiệm dày dặn trong lĩnh vực mẹ và bé, sẵn sàng tạo ra những nội dung viral cho thương hiệu của bạn.</p>
+                    
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3 text-xl"></i>
+                            <div>
+                                <h4 class="font-bold">Video quảng cáo chuyên nghiệp</h4>
+                                <p class="text-gray-600">Concept sáng tạo, quay dựng và biên tập video quảng cáo chất lượng cao.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3 text-xl"></i>
+                            <div>
+                                <h4 class="font-bold">Nội dung short-form viral</h4>
+                                <p class="text-gray-600">Sản xuất video ngắn thu hút trên TikTok, Instagram Reels và YouTube Shorts.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-check-circle text-green-500 mt-1 mr-3 text-xl"></i>
+                            <div>
+                                <h4 class="font-bold">Livestream bán hàng</h4>
+                                <p class="text-gray-600">Tổ chức và quản lý các buổi livestream hiệu quả trên đa nền tảng.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#lien-he" class="btn-primary px-6 py-3 rounded-lg font-medium inline-block">Yêu cầu báo giá</a>
+                </div>
+            </div>
+            
+            <div class="bg-white rounded-xl shadow-md overflow-hidden">
+                <div class="p-8 md:p-12">
+                    <div class="flex flex-col md:flex-row items-center">
+                        <div class="md:w-2/3 mb-8 md:mb-0 md:pr-8">
+                            <h3 class="text-2xl md:text-3xl font-bold mb-4">Đối tác của <span class="secondary-color">20+</span> nhãn hàng</h3>
+                            <p class="mb-6 text-lg">Chúng tôi tự hào là đối tác chiến lược của hơn 20 nhãn hàng uy tín trong lĩnh vực mẹ và bé. Với kinh nghiệm triển khai hàng trăm chiến dịch marketing thành công, Mẹ và Bé Marso cam kết mang đến hiệu quả vượt trội cho đối tác.</p>
+                            <p class="mb-6">Một số đối tác tiêu biểu:</p>
+                            <div class="grid grid-cols-3 gap-4">
+                                <div class="bg-gray-100 p-4 rounded-lg text-center">
+                                    <div class="text-center">
+                                        <i class="fas fa-star text-yellow-500 text-2xl"></i>
+                                        <p class="text-gray-600 mt-2">Nhãn hàng A</p>
+                                    </div>
+                                </div>
+                                <div class="bg-gray-100 p-4 rounded-lg text-center">
+                                    <div class="text-center">
+                                        <i class="fas fa-star text-yellow-500 text-2xl"></i>
+                                        <p class="text-gray-600 mt-2">Nhãn hàng B</p>
+                                    </div>
+                                </div>
+                                <div class="bg-gray-100 p-4 rounded-lg text-center">
+                                    <div class="text-center">
+                                        <i class="fas fa-star text-yellow-500 text-2xl"></i>
+                                        <p class="text-gray-600 mt-2">Nhãn hàng C</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:w-1/3">
+                            <div class="bg-gray-100 p-6 rounded-xl">
+                                <h4 class="font-bold text-xl mb-4 text-center">Bạn là nhãn hàng?</h4>
+                                <p class="mb-6 text-center">Hãy trở thành đối tác của chúng tôi để tiếp cận hàng triệu khách hàng tiềm năng!</p>
+                                <a href="#lien-he" class="btn-secondary w-full py-3 rounded-lg font-medium inline-block text-center">Kết nối ngay</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mô hình Affiliate -->
+    <section id="affiliate" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Mô hình <span class="primary-color">Affiliate</span></h2>
+                <p class="text-lg max-w-3xl mx-auto">Kiếm thu nhập không giới hạn cùng Mẹ và Bé Marso</p>
+            </div>
+            
+            <div class="flex flex-col lg:flex-row gap-8 mb-12">
+                <div class="lg:w-2/3">
+                    <div class="bg-white p-8 rounded-xl shadow-md h-full">
+                        <h3 class="text-2xl font-bold mb-6">Cách Thức Hoạt Động</h3>
+                        
+                        <div class="space-y-8">
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 rounded-full primary-bg flex items-center justify-center mr-4 shrink-0">
+                                    <span class="text-white font-bold">1</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-xl mb-2">Đăng ký & Xác thực</h4>
+                                    <p>Đăng ký trở thành cộng tác viên và hoàn tất quá trình xác thực thông tin cá nhân. Quá trình này chỉ mất vài phút và hoàn toàn miễn phí.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 rounded-full primary-bg flex items-center justify-center mr-4 shrink-0">
+                                    <span class="text-white font-bold">2</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-xl mb-2">Lựa chọn sản phẩm</h4>
+                                    <p>Truy cập vào thư viện sản phẩm đa dạng của chúng tôi, lựa chọn những sản phẩm phù hợp với đối tượng khách hàng của bạn.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 rounded-full primary-bg flex items-center justify-center mr-4 shrink-0">
+                                    <span class="text-white font-bold">3</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-xl mb-2">Chia sẻ & Tiếp thị</h4>
+                                    <p>Sử dụng link affiliate cá nhân để chia sẻ sản phẩm trên các kênh mạng xã hội, website hoặc thông qua tiếp thị trực tiếp.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <div class="w-12 h-12 rounded-full primary-bg flex items-center justify-center mr-4 shrink-0">
+                                    <span class="text-white font-bold">4</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-xl mb-2">Nhận hoa hồng</h4>
+                                    <p>Khi khách hàng mua sản phẩm thông qua link của bạn, hệ thống sẽ tự động ghi nhận và trả hoa hồng theo tỷ lệ cam kết.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/3">
+                    <div class="bg-white p-8 rounded-xl shadow-md h-full flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-6">Lợi Ích Tham Gia</h3>
+                            
+                            <div class="space-y-4 mb-8">
+                                <div class="flex items-start">
+                                    <i class="fas fa-percentage text-pink-500 mt-1 mr-3 text-xl"></i>
+                                    <div>
+                                        <p class="font-bold">Hoa hồng cạnh tranh</p>
+                                        <p class="text-gray-600">Tỷ lệ hoa hồng từ 15% - 30% tùy sản phẩm</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <i class="fas fa-rocket text-pink-500 mt-1 mr-3 text-xl"></i>
+                                    <div>
+                                        <p class="font-bold">Không cần vốn</p>
+                                        <p class="text-gray-600">Không phải đầu tư, tồn kho hay vận chuyển</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <i class="fas fa-chart-line text-pink-500 mt-1 mr-3 text-xl"></i>
+                                    <div>
+                                        <p class="font-bold">Theo dõi thời gian thực</p>
+                                        <p class="text-gray-600">Dashboard chi tiết, báo cáo minh bạch</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="flex items-start">
+                                    <i class="fas fa-graduation-cap text-pink-500 mt-1 mr-3 text-xl"></i>
+                                    <div>
+                                        <p class="font-bold">Đào tạo miễn phí</p>
+                                        <p class="text-gray-600">Được hướng dẫn kỹ năng bán hàng online</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <a href="#dang-ky-ctv" class="btn-primary w-full py-3 rounded-lg font-medium text-center">Đăng ký Cộng Tác Viên</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Thống kê -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-pink-50 p-8 rounded-xl text-center">
+                    <div class="text-4xl font-bold primary-color mb-2">500+</div>
+                    <p class="text-gray-700 font-medium">Cộng tác viên tích cực</p>
+                </div>
+                <div class="bg-purple-50 p-8 rounded-xl text-center">
+                    <div class="text-4xl font-bold secondary-color mb-2">25 tỷ</div>
+                    <p class="text-gray-700 font-medium">Doanh thu hoa hồng năm 2025</p>
+                </div>
+                <div class="bg-blue-50 p-8 rounded-xl text-center">
+                    <div class="text-4xl font-bold text-blue-500 mb-2">30%</div>
+                    <p class="text-gray-700 font-medium">Tỷ lệ hoa hồng cao nhất</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section id="testimonials" class="py-16 light-bg">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Khách hàng <span class="primary-color">nói gì</span> về chúng tôi</h2>
+                <p class="text-lg max-w-3xl mx-auto">Những phản hồi từ khách hàng và đối tác của Mẹ và Bé Marso</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-gray-200 rounded-full mr-4 flex items-center justify-center">
+                            <i class="fas fa-user text-gray-400 text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg">Chị Nguyễn Thị A</h4>
+                            <p class="text-gray-600">Cộng tác viên</p>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="italic">"Tôi đã tham gia làm cộng tác viên của Mẹ và Bé Marso được 6 tháng và thật sự hài lòng với mức hoa hồng và sự hỗ trợ từ đội ngũ. Hệ thống dễ sử dụng, sản phẩm chất lượng cao nên rất dễ giới thiệu cho khách hàng."</p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-gray-200 rounded-full mr-4 flex items-center justify-center">
+                            <i class="fas fa-user text-gray-400 text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg">Anh Trần Văn B</h4>
+                            <p class="text-gray-600">Đối tác nhãn hàng</p>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                    <p class="italic">"Sau khi hợp tác với Mẹ và Bé Marso, doanh số của chúng tôi đã tăng 35% chỉ trong 3 tháng. Đội ngũ marketing của họ thực sự hiểu thị trường mẹ và bé, và chiến lược content họ đề xuất đã giúp chúng tôi tiếp cận đúng khách hàng mục tiêu."</p>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-gray-200 rounded-full mr-4 flex items-center justify-center">
+                            <i class="fas fa-user text-gray-400 text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg">Chị Lê Thị C</h4>
+                            <p class="text-gray-600">Khách hàng</p>
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <div class="flex text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <p class="italic">"Tôi đã mua nhiều sản phẩm từ Mẹ và Bé Marso và luôn hài lòng với chất lượng. Đặc biệt là những video hướng dẫn của họ rất hữu ích, giúp tôi hiểu rõ hơn về cách chăm sóc con nhỏ. Dịch vụ khách hàng tuyệt vời, luôn sẵn sàng giải đáp mọi thắc mắc."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Liên Hệ -->
+    <section id="lien-he" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row gap-12">
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">Liên hệ <span class="primary-color">với chúng tôi</span></h2>
+                    <p class="text-lg mb-8">Hãy để lại thông tin, chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất!</p>
+                    
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2" for="name">Họ và tên</label>
+                                <input type="text" id="name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-pink-500" placeholder="Nhập họ và tên">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2" for="phone">Số điện thoại</label>
+                                <input type="tel" id="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-pink-500" placeholder="Nhập số điện thoại">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2" for="email">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-pink-500" placeholder="Nhập địa chỉ email">
+                        </div>
+                        
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2" for="topic">Chủ đề</label>
+                            <select id="topic" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-pink-500">
+                                <option value="">Chọn chủ đề</option>
+                                <option value="ctv">Đăng ký làm cộng tác viên</option>
+                                <option value="brand">Hợp tác nhãn hàng</option>
+                                <option value="product">Thông tin sản phẩm</option>
+                                <option value="support">Hỗ trợ khách hàng</option>
+                                <option value="other">Khác</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-gray-700 font-medium mb-2" for="message">Nội dung</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-pink-500" placeholder="Nhập nội dung liên hệ"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary px-8 py-3 rounded-lg font-medium">Gửi thông tin</button>
+                    </form>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <div class="bg-gray-100 p-8 rounded-xl h-full">
+                        <h3 class="text-2xl font-bold mb-6">Thông tin liên hệ</h3>
+                        
+                        <div class="space-y-6 mb-8">
+                            <div class="flex items-start">
+                                <i class="fas fa-map-marker-alt primary-color mt-1 mr-4 text-xl"></i>
+                                <div>
+                                    <h4 class="font-bold mb-1">Địa chỉ</h4>
+                                    <p>123 Đường ABC, Quận XYZ, TP. Hồ Chí Minh</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <i class="fas fa-phone-alt primary-color mt-1 mr-4 text-xl"></i>
+                                <div>
+                                    <h4 class="font-bold mb-1">Điện thoại</h4>
+                                    <p>028 1234 5678</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <i class="fas fa-envelope primary-color mt-1 mr-4 text-xl"></i>
+                                <div>
+                                    <h4 class="font-bold mb-1">Email</h4>
+                                    <p>info@mevabemarso.vn</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <i class="fas fa-clock primary-color mt-1 mr-4 text-xl"></i>
+                                <div>
+                                    <h4 class="font-bold mb-1">Giờ làm việc</h4>
+                                    <p>Thứ 2 - Thứ 6: 8:30 - 17:30<br>Thứ 7: 8:30 - 12:00</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <h4 class="font-bold mb-4">Kết nối với chúng tôi</h4>
+                            <div class="flex space-x-4">
+                                <a href="#" class="w-10 h-10 rounded-full bg-pink-500 flex items-center justify-center text-white hover:bg-pink-600 transition-colors">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 rounded-full bg-pink-500 flex items-center justify-center text-white hover:bg-pink-600 transition-colors">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 rounded-full bg-pink-500 flex items-center justify-center text-white hover:bg-pink-600 transition-colors">
+                                    <i class="fab fa-tiktok"></i>
+                                </a>
+                                <a href="#" class="w-10 h-10 rounded-full bg-pink-500 flex items-center justify-center text-white hover:bg-pink-600 transition-colors">
+                                    <i class="fab fa-youtube"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form đăng ký CTV -->
+    <section id="dang-ky-ctv" class="py-16 light-bg">
+        <div class="container mx-auto px-4">
+            <div class="bg-white p-8 md:p-12 rounded-xl shadow-md">
+                <div class="flex flex-col md:flex-row gap-12">
+                    <div class="md:w-1/2">
+                        <h2 class="text-3xl font-bold mb-6">Đăng ký trở thành <span class="primary-color">Cộng Tác Viên</span></h2>
+                        <p class="mb-8">Tham gia mạng lưới cộng tác viên của Mẹ và Bé Marso ngay hôm nay để:
+                        <ul class="list-disc pl-5 space-y-2 mb-8">
+                            <li>Kiếm thu nhập không giới hạn với mức hoa hồng hấp dẫn</li>
+                            <li>Được đào tạo kỹ năng bán hàng và marketing online</li>
+                            <li>Tiếp cận hàng trăm sản phẩm chất lượng cao</li>
+                            <li>Tham gia cộng đồng CTV năng động</li>
+                        </ul>
+                        
+                        <div class="p-4 bg-pink-50 rounded-lg mb-8">
+                            <p class="font-medium">Yêu cầu:</p>
+                            <ul class="list-disc pl-5 space-y-1 text-sm">
+                                <li>Có tài khoản mạng xã hội (Facebook, TikTok, Instagram...)</li>
+                                <li>Có kiến thức cơ bản về sản phẩm mẹ và bé</li>
+                                <li>Có khả năng giao tiếp tốt</li>
+                                <li>Có tinh thần học hỏi và chủ động</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="md:w-1/2">
+                        <form class="space-y-6">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <div>
+                                    <label class="block text-gray-700 font-medium mb-2" for="ctv-name">Họ và tên</label>
+                                    <input type="text" id="ctv-name" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-pink-500" placeholder="Nhập họ và tên">
+                                </div>
+                                <div>
+                                    <label class="block text-gray-700 font-medium mb-2" for="ctv-phone">Số điện thoại</label>
+                                    <input type="tel" id="ctv-phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-pink-500" placeholder="Nhập số điện thoại">
+                                </div>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2" for="ctv-email">Email</label>
+                                <input type="email" id="ctv-email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-pink-500" placeholder="Nhập địa chỉ email">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2" for="ctv-address">Địa chỉ</label>
+                                <input type="text" id="ctv-address" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-pink-500" placeholder="Nhập địa chỉ">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2" for="ctv-social">Link mạng xã hội chính</label>
+                                <input type="url" id="ctv-social" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-pink-500" placeholder="Facebook/TikTok/Instagram...">
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2" for="ctv-exp">Kinh nghiệm bán hàng online</label>
+                                <select id="ctv-exp" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-pink-500">
+                                    <option value="">Chọn mức độ kinh nghiệm</option>
+                                    <option value="none">Chưa có kinh nghiệm</option>
+                                    <option value="beginner">Dưới 1 năm</option>
+                                    <option value="intermediate">1-3 năm</option>
+                                    <option value="advanced">Trên 3 năm</option>
+                                </select>
+                            </div>
+                            
+                            <div>
+                                <label class="block text-gray-700 font-medium mb-2" for="ctv-ref">Bạn biết đến chúng tôi qua đâu?</label>
+                                <select id="ctv-ref" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:border-pink-500">
+                                    <option value="">Chọn nguồn</option>
+                                    <option value="fb">Facebook</option>
+                                    <option value="tiktok">TikTok</option>
+                                    <option value="yt">YouTube</option>
+                                    <option value="friend">Bạn bè giới thiệu</option>
+                                    <option value="search">Tìm kiếm Google</option>
+                                    <option value="other">Khác</option>
+                                </select>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <input type="checkbox" id="ctv-agree" class="mt-1 mr-2">
+                                <label for="ctv-agree" class="text-gray-700">Tôi đồng ý với <a href="#" class="text-pink-500 hover:underline">điều khoản</a> và <a href="#" class="text-pink-500 hover:underline">chính sách</a> của Mẹ và Bé Marso</label>
+                            </div>
+                            
+                            <button type="submit" class="btn-primary w-full px-8 py-3 rounded-lg font-medium">Đăng ký ngay</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Câu hỏi <span class="secondary-color">thường gặp</span></h2>
+                <p class="text-lg max-w-3xl mx-auto">Những thắc mắc phổ biến về sản phẩm và dịch vụ của Mẹ và Bé Marso</p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto space-y-6">
+                <div class="bg-gray-50 rounded-xl overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Làm thế nào để đăng ký làm cộng tác viên?</h3>
+                        <p>Bạn có thể đăng ký làm cộng tác viên bằng cách điền thông tin vào form đăng ký trên website của chúng tôi hoặc gọi điện trực tiếp đến số hotline. Sau khi đăng ký, đội ngũ của chúng tôi sẽ liên hệ để xác nhận thông tin và hướng dẫn bạn các bước tiếp theo.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 rounded-xl overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Tôi không có kinh nghiệm bán hàng online, có thể tham gia không?</h3>
+                        <p>Hoàn toàn có thể! Chúng tôi cung cấp đầy đủ hướng dẫn và đào tạo cho cộng tác viên mới, kể cả những người chưa có kinh nghiệm bán hàng online. Bạn sẽ được tham gia các khóa đào tạo miễn phí về kỹ năng bán hàng, marketing online và kiến thức sản phẩm.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 rounded-xl overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Mức hoa hồng cho cộng tác viên là bao nhiêu?</h3>
+                        <p>Mức hoa hồng của chúng tôi dao động từ 15% đến 30% tùy thuộc vào từng loại sản phẩm. Ngoài ra, chúng tôi còn có các chương trình thưởng thêm cho cộng tác viên đạt doanh số cao hoặc có hoạt động tích cực.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 rounded-xl overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Làm thế nào để trở thành đối tác nhãn hàng của Mẹ và Bé Marso?</h3>
+                        <p>Các nhãn hàng muốn hợp tác có thể liên hệ với chúng tôi qua email hoặc điện thoại. Đội ngũ phát triển đối tác của chúng tôi sẽ làm việc với bạn để xây dựng kế hoạch hợp tác phù hợp với nhu cầu và mục tiêu của thương hiệu.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 rounded-xl overflow-hidden">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-3">Mẹ và Bé Marso có ship hàng toàn quốc không?</h3>
+                        <p>Có, chúng tôi cung cấp dịch vụ giao hàng toàn quốc. Khách hàng ở tất cả các tỉnh thành đều có thể đặt hàng và nhận sản phẩm tận nhà. Thời gian giao hàng thông thường từ 1-3 ngày tùy khu vực.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 hero-gradient">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Sẵn sàng <span class="primary-color">đồng hành</span> cùng <span class="secondary-color">Mẹ và Bé Marso</span>?</h2>
+            <p class="text-xl max-w-2xl mx-auto mb-8">Hãy tham gia cùng chúng tôi ngay hôm nay để trở thành một phần của hành trình phục vụ các gia đình Việt Nam.</p>
+            <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 justify-center">
+                <a href="#dang-ky-ctv" class="btn-primary px-8 py-4 rounded-full font-medium text-center">Trở thành cộng tác viên</a>
+                <a href="#lien-he" class="btn-secondary px-8 py-4 rounded-full font-medium text-center">Liên hệ hợp tác</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
+                <div>
+                    <div class="mb-6">
+                        <!-- Logo -->
+                        <div class="text-white text-2xl font-bold mb-4">
+                            <span class="text-purple-400">Mẹ</span> và <span class="text-pink-400">Bé</span> Marso
+                        </div>
+                        <p class="text-gray-400">Hệ sinh thái toàn diện kết nối mẹ và bé với những sản phẩm và dịch vụ chất lượng cao từ các thương hiệu uy tín.</p>
+                    </div>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-facebook-f text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-instagram text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-tiktok text-xl"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                            <i class="fab fa-youtube text-xl"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Sản phẩm</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Sữa công thức</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Thực phẩm chức năng</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Đồ dùng cho bé</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Sản phẩm cho mẹ</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Thực phẩm bổ sung</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Dịch vụ</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Sàn Affiliate</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Cộng tác viên</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Marketing B2B</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Sản xuất nội dung</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Đào tạo online</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Liên hệ</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3 text-pink-400"></i>
+                            <span class="text-gray-400">123 Đường ABC, Quận XYZ, TP. Hồ Chí Minh</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt mt-1 mr-3 text-pink-400"></i>
+                            <span class="text-gray-400">028 1234 5678</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-3 text-pink-400"></i>
+                            <span class="text-gray-400">info@mevabemarso.vn</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-clock mt-1 mr-3 text-pink-400"></i>
+                            <span class="text-gray-400">Thứ 2 - Thứ 6: 8:30 - 17:30<br>Thứ 7: 8:30 - 12:00</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <hr class="border-gray-700 mb-8">
+            
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-500 mb-4 md:mb-0">© 2025 Mẹ và Bé Marso. Tất cả các quyền được bảo lưu.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-500 hover:text-white transition-colors">Điều khoản sử dụng</a>
+                    <a href="#" class="text-gray-500 hover:text-white transition-colors">Chính sách bảo mật</a>
+                    <a href="#" class="text-gray-500 hover:text-white transition-colors">Chính sách cookie</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Close mobile menu when clicking on a link
+        const mobileLinks = mobileMenu.querySelectorAll('a');
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 80, // Adjust for header height
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>

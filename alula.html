@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mẹ và Bé Marso hợp tác cùng Alula Việt Nam</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: #333;
+            background-color: #fff8f5;
+        }
+        .hero-section {
+            background: linear-gradient(rgba(255, 236, 230, 0.8), rgba(255, 220, 208, 0.8)), url('https://images.unsplash.com/photo-1561989762-7518df5a3312?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        .btn-primary {
+            background-color: #ff7b54;
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            background-color: #ff6b3d;
+            transform: translateY(-2px);
+        }
+        .card {
+            transition: all 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+        }
+        .section-title::after {
+            content: "";
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 70px;
+            height: 3px;
+            background-color: #ff7b54;
+        }
+        .benefit-icon {
+            color: #ff7b54;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .faq-item {
+            border-bottom: 1px solid #ffe0d0;
+            transition: all 0.3s ease;
+        }
+        .faq-item:hover {
+            background-color: #fff1eb;
+        }
+        .timeline-item {
+            position: relative;
+            padding-left: 30px;
+            margin-bottom: 30px;
+        }
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 5px;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            background-color: #ff7b54;
+        }
+        .timeline-item::after {
+            content: "";
+            position: absolute;
+            left: 7px;
+            top: 25px;
+            width: 2px;
+            height: calc(100% + 5px);
+            background-color: #ffe0d0;
+        }
+        .timeline-item:last-child::after {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero-section min-h-screen flex items-center justify-center p-4 md:p-10">
+        <div class="container mx-auto text-center">
+            <div class="bg-white bg-opacity-90 rounded-lg p-8 md:p-12 shadow-xl max-w-4xl mx-auto">
+                <h1 class="text-4xl md:text-5xl font-bold text-pink-600 mb-6">Mẹ và Bé Marso <span class="text-blue-500">×</span> Alula Việt Nam</h1>
+                <h2 class="text-2xl md:text-3xl font-semibold text-gray-700 mb-6">Chung tay vì thế hệ tương lai</h2>
+                <p class="text-lg md:text-xl text-gray-600 mb-8">Cùng nâng cao kiến thức chăm sóc con và tạo nền tảng vững chắc cho sự phát triển toàn diện của trẻ</p>
+                <div class="flex flex-col md:flex-row justify-center space-y-4 md:space-y-0 md:space-x-6">
+                    <a href="#register" class="btn-primary text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg">Đăng ký ngay</a>
+                    <a href="#brandday" class="bg-white text-pink-600 border-2 border-pink-600 hover:bg-pink-50 font-bold py-3 px-8 rounded-full text-lg shadow-lg transition">Xem lịch Brand Day</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partnership Introduction -->
+    <section class="py-16 px-4 md:px-10 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 section-title">Sự Hợp Tác Đặc Biệt</h2>
+            <div class="flex flex-col md:flex-row items-center justify-between gap-10">
+                <div class="md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1516627145497-ae6968895b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Hợp tác giữa Mẹ và Bé Marso và Alula Việt Nam" class="rounded-lg shadow-xl w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h3 class="text-2xl font-semibold text-pink-600 mb-4">Cùng nhau vì sự phát triển toàn diện của trẻ</h3>
+                    <p class="text-gray-700 mb-6 leading-relaxed">Mẹ và Bé Marso tự hào hợp tác cùng Alula Việt Nam - thương hiệu dinh dưỡng hàng đầu cho trẻ em, mang đến những chương trình giáo dục và hỗ trợ thiết thực dành cho các gia đình Việt.</p>
+                    <p class="text-gray-700 mb-6 leading-relaxed">Sự kết hợp giữa kinh nghiệm chăm sóc mẹ và bé của Marso cùng với chuyên môn dinh dưỡng của Alula sẽ tạo nên một chuỗi hoạt động đa dạng, giúp các bậc phụ huynh trang bị kiến thức toàn diện trong việc nuôi dạy con.</p>
+                    <div class="flex flex-wrap gap-4 mb-6">
+                        <div class="bg-pink-50 px-4 py-2 rounded-full text-pink-600 font-medium">Dinh dưỡng toàn diện</div>
+                        <div class="bg-blue-50 px-4 py-2 rounded-full text-blue-600 font-medium">Phát triển trí tuệ</div>
+                        <div class="bg-green-50 px-4 py-2 rounded-full text-green-600 font-medium">Kỹ năng nuôi dạy con</div>
+                        <div class="bg-purple-50 px-4 py-2 rounded-full text-purple-600 font-medium">Chăm sóc sức khỏe</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Day Program -->
+    <section id="brandday" class="py-16 px-4 md:px-10 bg-pink-50">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 section-title">Chương Trình Brand Day</h2>
+            <p class="text-gray-700 text-center max-w-3xl mx-auto mb-12 text-lg">Chuỗi sự kiện Brand Day là những ngày hội đặc biệt với nhiều hoạt động bổ ích, tư vấn chuyên sâu và ưu đãi độc quyền dành cho các gia đình.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 mb-12">
+                <div class="bg-white rounded-xl shadow-lg p-6 md:p-8 card">
+                    <div class="text-center mb-6">
+                        <span class="inline-block bg-pink-100 text-pink-600 text-lg font-semibold py-2 px-4 rounded-full mb-2">Tháng 7/2025</span>
+                        <h3 class="text-2xl font-bold text-gray-800">Brand Day: Dinh Dưỡng Toàn Diện</h3>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="timeline-item">
+                            <h4 class="font-semibold text-xl text-pink-600">Tọa đàm với chuyên gia dinh dưỡng</h4>
+                            <p class="text-gray-600 mt-2">Gặp gỡ và trao đổi cùng các chuyên gia dinh dưỡng hàng đầu từ Alula về chế độ ăn cân bằng cho trẻ em.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4 class="font-semibold text-xl text-pink-600">Workshop nấu ăn dinh dưỡng</h4>
+                            <p class="text-gray-600 mt-2">Học cách chuẩn bị các bữa ăn phù hợp với từng giai đoạn phát triển của trẻ.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4 class="font-semibold text-xl text-pink-600">Khám sàng lọc miễn phí</h4>
+                            <p class="text-gray-600 mt-2">Đo chiều cao, cân nặng và được tư vấn về tình trạng phát triển của bé.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-6 md:p-8 card">
+                    <div class="text-center mb-6">
+                        <span class="inline-block bg-blue-100 text-blue-600 text-lg font-semibold py-2 px-4 rounded-full mb-2">Tháng 8/2025</span>
+                        <h3 class="text-2xl font-bold text-gray-800">Brand Day: Phát Triển Trí Tuệ</h3>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="timeline-item">
+                            <h4 class="font-semibold text-xl text-blue-600">Hội thảo kích thích não bộ</h4>
+                            <p class="text-gray-600 mt-2">Tìm hiểu về các phương pháp kích thích phát triển não bộ cho trẻ từ 0-3 tuổi.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4 class="font-semibold text-xl text-blue-600">Trải nghiệm đồ chơi giáo dục</h4>
+                            <p class="text-gray-600 mt-2">Giới thiệu và trải nghiệm các loại đồ chơi giúp phát triển trí tuệ phù hợp với từng độ tuổi.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4 class="font-semibold text-xl text-blue-600">Tư vấn cá nhân hóa</h4>
+                            <p class="text-gray-600 mt-2">Gặp gỡ chuyên gia tâm lý để được tư vấn phương pháp giáo dục phù hợp với tính cách của bé.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <div class="bg-white rounded-xl shadow-lg p-6 md:p-8 card">
+                    <div class="text-center mb-6">
+                        <span class="inline-block bg-green-100 text-green-600 text-lg font-semibold py-2 px-4 rounded-full mb-2">Tháng 9/2025</span>
+                        <h3 class="text-2xl font-bold text-gray-800">Brand Day: Kỹ Năng Nuôi Dạy Con</h3>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="timeline-item">
+                            <h4 class="font-semibold text-xl text-green-600">Chia sẻ từ chuyên gia giáo dục</h4>
+                            <p class="text-gray-600 mt-2">Phương pháp giáo dục hiện đại giúp phát triển tư duy độc lập và sáng tạo cho trẻ.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4 class="font-semibold text-xl text-green-600">Workshop kỹ năng làm cha mẹ</h4>
+                            <p class="text-gray-600 mt-2">Học cách giao tiếp hiệu quả và xây dựng mối quan hệ tích cực với con.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4 class="font-semibold text-xl text-green-600">Hoạt động tương tác cha mẹ - con cái</h4>
+                            <p class="text-gray-600 mt-2">Các trò chơi và hoạt động giúp tăng cường kết nối giữa cha mẹ và con cái.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-6 md:p-8 card">
+                    <div class="text-center mb-6">
+                        <span class="inline-block bg-purple-100 text-purple-600 text-lg font-semibold py-2 px-4 rounded-full mb-2">Tháng 10/2025</span>
+                        <h3 class="text-2xl font-bold text-gray-800">Brand Day: Chăm Sóc Sức Khỏe</h3>
+                    </div>
+                    <div class="space-y-6">
+                        <div class="timeline-item">
+                            <h4 class="font-semibold text-xl text-purple-600">Tư vấn với bác sĩ nhi khoa</h4>
+                            <p class="text-gray-600 mt-2">Giải đáp các thắc mắc về sức khỏe và phòng bệnh cho trẻ từ các bác sĩ nhi khoa uy tín.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4 class="font-semibold text-xl text-purple-600">Workshop sơ cứu cơ bản</h4>
+                            <p class="text-gray-600 mt-2">Hướng dẫn các kỹ năng sơ cứu cơ bản dành cho trẻ em trong tình huống khẩn cấp.</p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4 class="font-semibold text-xl text-purple-600">Giới thiệu sản phẩm mới từ Alula</h4>
+                            <p class="text-gray-600 mt-2">Trải nghiệm dòng sản phẩm mới nhất từ Alula hỗ trợ tăng cường hệ miễn dịch cho trẻ.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#register" class="btn-primary text-white font-bold py-3 px-8 rounded-full text-lg shadow-lg inline-block">Đăng ký tham gia Brand Day</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Community Activities -->
+    <section class="py-16 px-4 md:px-10 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 section-title">Các Hoạt Động Cộng Đồng</h2>
+            <p class="text-gray-700 text-center max-w-3xl mx-auto mb-12 text-lg">Ngoài các sự kiện Brand Day, chúng tôi còn tổ chức nhiều hoạt động ý nghĩa, mang lại giá trị thiết thực cho cộng đồng.</p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-pink-50 rounded-xl shadow-lg overflow-hidden card">
+                    <img src="https://images.unsplash.com/photo-1535572290543-960a8046f5af?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Webinar Chuyên Đề" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-pink-600 mb-3">Webinar Chuyên Đề</h3>
+                        <p class="text-gray-700 mb-4">Chuỗi webinar trực tuyến miễn phí với các chuyên gia về dinh dưỡng, sức khỏe và giáo dục trẻ em, giúp cha mẹ tiếp cận kiến thức từ xa.</p>
+                        <p class="text-sm text-gray-500">Thời gian: Hàng tuần</p>
+                    </div>
+                </div>
+                
+                <div class="bg-blue-50 rounded-xl shadow-lg overflow-hidden card">
+                    <img src="https://images.unsplash.com/photo-1588075592446-265fd1e6e76f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Hỗ Trợ Trẻ Em Khó Khăn" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-blue-600 mb-3">Hỗ Trợ Trẻ Em Khó Khăn</h3>
+                        <p class="text-gray-700 mb-4">Chương trình trao tặng sản phẩm dinh dưỡng, đồ dùng học tập và tổ chức khám sức khỏe miễn phí cho trẻ em có hoàn cảnh khó khăn.</p>
+                        <p class="text-sm text-gray-500">Thời gian: Hàng quý</p>
+                    </div>
+                </div>
+                
+                <div class="bg-green-50 rounded-xl shadow-lg overflow-hidden card">
+                    <img src="https://images.unsplash.com/photo-1544776193-52d3932d8e3d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Cộng Đồng Cha Mẹ Thông Thái" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-green-600 mb-3">Cộng Đồng Cha Mẹ Thông Thái</h3>
+                        <p class="text-gray-700 mb-4">Nền tảng trực tuyến kết nối các gia đình, nơi chia sẻ kinh nghiệm, kiến thức và nhận hỗ trợ từ cộng đồng và chuyên gia.</p>
+                        <p class="text-sm text-gray-500">Hoạt động: Hàng ngày</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-purple-50 rounded-xl shadow-lg overflow-hidden card">
+                    <div class="p-6 flex items-start">
+                        <i class="fas fa-book-reader text-4xl text-purple-600 mr-6"></i>
+                        <div>
+                            <h3 class="text-xl font-bold text-purple-600 mb-3">Thư Viện Tài Nguyên</h3>
+                            <p class="text-gray-700">Cung cấp miễn phí ebook, podcast, video hướng dẫn và các tài liệu giáo dục chất lượng cao dành cho cha mẹ và giáo viên mầm non.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-yellow-50 rounded-xl shadow-lg overflow-hidden card">
+                    <div class="p-6 flex items-start">
+                        <i class="fas fa-hands-helping text-4xl text-yellow-600 mr-6"></i>
+                        <div>
+                            <h3 class="text-xl font-bold text-yellow-600 mb-3">Quỹ Học Bổng Tiềm Năng</h3>
+                            <p class="text-gray-700">Cấp học bổng và hỗ trợ tài chính cho các học sinh có tiềm năng, khuyến khích phát triển tài năng từ sớm.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="py-16 px-4 md:px-10 bg-blue-50">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 section-title">Lợi Ích Khi Tham Gia</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white rounded-xl shadow-lg p-6 text-center card">
+                    <i class="fas fa-brain benefit-icon"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Kiến Thức Chuyên Sâu</h3>
+                    <p class="text-gray-600">Tiếp cận kiến thức chuyên sâu về dinh dưỡng, sức khỏe và phát triển trẻ em từ các chuyên gia hàng đầu.</p>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-6 text-center card">
+                    <i class="fas fa-users benefit-icon"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Kết Nối Cộng Đồng</h3>
+                    <p class="text-gray-600">Tham gia vào cộng đồng cha mẹ cùng chí hướng, chia sẻ kinh nghiệm và nhận hỗ trợ từ những người đồng hành.</p>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-6 text-center card">
+                    <i class="fas fa-gift benefit-icon"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Ưu Đãi Độc Quyền</h3>
+                    <p class="text-gray-600">Nhận các ưu đãi đặc biệt, quà tặng và mẫu thử sản phẩm mới nhất từ Mẹ và Bé Marso và Alula Việt Nam.</p>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-8">
+                <div class="bg-white rounded-xl shadow-lg p-6 text-center card">
+                    <i class="fas fa-certificate benefit-icon"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Chứng Chỉ Tham Gia</h3>
+                    <p class="text-gray-600">Nhận chứng chỉ tham gia các khóa học và workshop, có giá trị trong việc xây dựng kiến thức nuôi dạy con.</p>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-6 text-center card">
+                    <i class="fas fa-user-md benefit-icon"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Tư Vấn Cá Nhân</h3>
+                    <p class="text-gray-600">Cơ hội được tư vấn trực tiếp với các chuyên gia dinh dưỡng, bác sĩ nhi khoa và chuyên gia tâm lý trẻ em.</p>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-6 text-center card">
+                    <i class="fas fa-chart-line benefit-icon"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Theo Dõi Phát Triển</h3>
+                    <p class="text-gray-600">Tiếp cận các công cụ và ứng dụng hiện đại giúp theo dõi sự phát triển của con một cách khoa học và toàn diện.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Registration Form -->
+    <section id="register" class="py-16 px-4 md:px-10 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 section-title">Đăng Ký Tham Gia</h2>
+            
+            <div class="bg-pink-50 rounded-xl shadow-xl p-6 md:p-10 max-w-3xl mx-auto">
+                <p class="text-gray-700 text-center mb-8">Đăng ký tham gia chương trình Brand Day và nhận thông tin về các hoạt động cộng đồng của Mẹ và Bé Marso & Alula Việt Nam.</p>
+                
+                <form class="space-y-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div>
+                            <label for="fullname" class="block text-gray-700 font-medium mb-2">Họ và tên</label>
+                            <input type="text" id="fullname" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500" placeholder="Nguyễn Văn A">
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-gray-700 font-medium mb-2">Số điện thoại</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500" placeholder="0912345678">
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                        <input type="email" id="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500" placeholder="example@gmail.com">
+                    </div>
+                    
+                    <div>
+                        <label for="child-age" class="block text-gray-700 font-medium mb-2">Độ tuổi của con</label>
+                        <select id="child-age" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500">
+                            <option value="">-- Chọn độ tuổi --</option>
+                            <option value="0-6m">0-6 tháng</option>
+                            <option value="7-12m">7-12 tháng</option>
+                            <option value="1-2y">1-2 tuổi</option>
+                            <option value="3-5y">3-5 tuổi</option>
+                            <option value="6y+">Trên 6 tuổi</option>
+                            <option value="expecting">Đang mang thai</option>
+                        </select>
+                    </div>
+                    
+                    <div>
+                        <label class="block text-gray-700 font-medium mb-2">Chương trình quan tâm</label>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+                            <div class="flex items-center">
+                                <input type="checkbox" id="brand-day-1" class="w-5 h-5 text-pink-600">
+                                <label for="brand-day-1" class="ml-2 text-gray-700">Brand Day: Dinh Dưỡng Toàn Diện</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="checkbox" id="brand-day-2" class="w-5 h-5 text-pink-600">
+                                <label for="brand-day-2" class="ml-2 text-gray-700">Brand Day: Phát Triển Trí Tuệ</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="checkbox" id="brand-day-3" class="w-5 h-5 text-pink-600">
+                                <label for="brand-day-3" class="ml-2 text-gray-700">Brand Day: Kỹ Năng Nuôi Dạy Con</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="checkbox" id="brand-day-4" class="w-5 h-5 text-pink-600">
+                                <label for="brand-day-4" class="ml-2 text-gray-700">Brand Day: Chăm Sóc Sức Khỏe</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="checkbox" id="community" class="w-5 h-5 text-pink-600">
+                                <label for="community" class="ml-2 text-gray-700">Hoạt động cộng đồng</label>
+                            </div>
+                            <div class="flex items-center">
+                                <input type="checkbox" id="webinar" class="w-5 h-5 text-pink-600">
+                                <label for="webinar" class="ml-2 text-gray-700">Webinar chuyên đề</label>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label for="note" class="block text-gray-700 font-medium mb-2">Câu hỏi hoặc ghi chú</label>
+                        <textarea id="note" rows="3" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-pink-500" placeholder="Chia sẻ thêm thông tin hoặc câu hỏi của bạn..."></textarea>
+                    </div>
+                    
+                    <div class="flex items-center">
+                        <input type="checkbox" id="agreement" class="w-5 h-5 text-pink-600">
+                        <label for="agreement" class="ml-2 text-gray-700">Tôi đồng ý nhận thông tin về các chương trình và ưu đãi từ Mẹ và Bé Marso và Alula Việt Nam</label>
+                    </div>
+                    
+                    <div class="text-center pt-4">
+                        <button type="submit" class="btn-primary text-white font-bold py-3 px-10 rounded-full text-lg shadow-lg">Đăng ký ngay</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-16 px-4 md:px-10 bg-pink-50">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 section-title">Câu Hỏi Thường Gặp</h2>
+            
+            <div class="max-w-3xl mx-auto">
+                <div class="faq-item p-6 bg-white rounded-lg shadow-md mb-4">
+                    <h3 class="text-xl font-semibold text-pink-600 mb-2">Chương trình Brand Day có phải trả phí không?</h3>
+                    <p class="text-gray-700">Không, tất cả các chương trình Brand Day đều miễn phí cho khách hàng đã đăng ký trước. Tuy nhiên, số lượng tham gia có giới hạn nên bạn cần đăng ký sớm để đảm bảo có chỗ.</p>
+                </div>
+                
+                <div class="faq-item p-6 bg-white rounded-lg shadow-md mb-4">
+                    <h3 class="text-xl font-semibold text-pink-600 mb-2">Tôi có thể đưa con đi cùng tham gia sự kiện không?</h3>
+                    <p class="text-gray-700">Có, các sự kiện Brand Day đều có khu vực vui chơi dành cho trẻ em với sự giám sát của đội ngũ chăm sóc trẻ chuyên nghiệp, để phụ huynh có thể tập trung tham gia các hoạt động.</p>
+                </div>
+                
+                <div class="faq-item p-6 bg-white rounded-lg shadow-md mb-4">
+                    <h3 class="text-xl font-semibold text-pink-600 mb-2">Làm thế nào để nhận được tư vấn cá nhân từ chuyên gia?</h3>
+                    <p class="text-gray-700">Khi tham gia các sự kiện Brand Day, bạn có thể đăng ký lịch tư vấn cá nhân với các chuyên gia tại quầy đón tiếp. Ngoài ra, chúng tôi cũng cung cấp dịch vụ tư vấn trực tuyến cho các thành viên của cộng đồng.</p>
+                </div>
+                
+                <div class="faq-item p-6 bg-white rounded-lg shadow-md mb-4">
+                    <h3 class="text-xl font-semibold text-pink-600 mb-2">Các sự kiện có được tổ chức ở nhiều tỉnh thành không?</h3>
+                    <p class="text-gray-700">Hiện tại, các sự kiện Brand Day đang được tổ chức tại Hà Nội, TP.HCM và Đà Nẵng. Chúng tôi có kế hoạch mở rộng đến các tỉnh thành khác trong thời gian tới. Các webinar trực tuyến có thể tham gia từ bất kỳ đâu.</p>
+                </div>
+                
+                <div class="faq-item p-6 bg-white rounded-lg shadow-md mb-4">
+                    <h3 class="text-xl font-semibold text-pink-600 mb-2">Làm thế nào để trở thành thành viên của cộng đồng Cha Mẹ Thông Thái?</h3>
+                    <p class="text-gray-700">Bạn có thể đăng ký trở thành thành viên cộng đồng Cha Mẹ Thông Thái miễn phí thông qua website hoặc ứng dụng của Mẹ và Bé Marso. Thành viên sẽ được tham gia các nhóm chia sẻ, nhận thông tin chuyên sâu và nhiều đặc quyền khác.</p>
+                </div>
+                
+                <div class="faq-item p-6 bg-white rounded-lg shadow-md">
+                    <h3 class="text-xl font-semibold text-pink-600 mb-2">Tôi có thể nhận được hỗ trợ gì nếu không thể tham gia trực tiếp?</h3>
+                    <p class="text-gray-700">Nếu không thể tham gia trực tiếp, bạn vẫn có thể tiếp cận các tài liệu, video bài giảng và tóm tắt nội dung qua email sau mỗi sự kiện. Chúng tôi cũng tổ chức các webinar trực tuyến định kỳ để hỗ trợ các phụ huynh ở xa.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="py-16 px-4 md:px-10 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl md:text-4xl font-bold text-center mb-16 section-title">Thông Tin Liên Hệ</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="bg-pink-50 rounded-xl shadow-lg p-6 text-center card">
+                    <i class="fas fa-map-marker-alt text-4xl text-pink-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Địa Chỉ</h3>
+                    <p class="text-gray-600">Tòa nhà Marso Tower, 123 Nguyễn Huệ<br>Quận 1, TP. Hồ Chí Minh</p>
+                </div>
+                
+                <div class="bg-pink-50 rounded-xl shadow-lg p-6 text-center card">
+                    <i class="fas fa-phone-alt text-4xl text-pink-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Điện Thoại</h3>
+                    <p class="text-gray-600">Hotline: 1900 6789<br>Hỗ trợ: 028 1234 5678</p>
+                </div>
+                
+                <div class="bg-pink-50 rounded-xl shadow-lg p-6 text-center card">
+                    <i class="fas fa-envelope text-4xl text-pink-600 mb-4"></i>
+                    <h3 class="text-xl font-bold text-gray-800 mb-2">Email</h3>
+                    <p class="text-gray-600">info@mevabemarso.vn<br>support@mevabemarso.vn</p>
+                </div>
+            </div>
+            
+            <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <div class="bg-blue-50 rounded-xl shadow-lg p-6 card">
+                    <h3 class="text-xl font-bold text-blue-600 mb-4 text-center">Theo Dõi Chúng Tôi</h3>
+                    <div class="flex justify-center space-x-6">
+                        <a href="#" class="text-3xl text-blue-600 hover:text-blue-800"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-3xl text-pink-600 hover:text-pink-800"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-3xl text-red-600 hover:text-red-800"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="text-3xl text-blue-400 hover:text-blue-600"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-3xl text-green-600 hover:text-green-800"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+                
+                <div class="bg-green-50 rounded-xl shadow-lg p-6 card">
+                    <h3 class="text-xl font-bold text-green-600 mb-4 text-center">Tải Ứng Dụng</h3>
+                    <div class="flex justify-center space-x-4">
+                        <a href="#" class="bg-black text-white px-4 py-2 rounded-lg flex items-center">
+                            <i class="fab fa-apple text-2xl mr-2"></i>
+                            <div>
+                                <div class="text-xs">Tải về trên</div>
+                                <div class="font-bold">App Store</div>
+                            </div>
+                        </a>
+                        <a href="#" class="bg-black text-white px-4 py-2 rounded-lg flex items-center">
+                            <i class="fab fa-google-play text-2xl mr-2"></i>
+                            <div>
+                                <div class="text-xs">Tải về trên</div>
+                                <div class="font-bold">Google Play</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-10 px-4">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Về Chúng Tôi</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white">Giới thiệu</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Tầm nhìn & Sứ mệnh</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Đội ngũ</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Đối tác</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Sản Phẩm</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white">Sản phẩm Alula</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Sản phẩm Marso</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Bộ sưu tập mới</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Khuyến mãi</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Hỗ Trợ</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-300 hover:text-white">Câu hỏi thường gặp</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Hướng dẫn mua hàng</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Chính sách đổi trả</a></li>
+                        <li><a href="#" class="text-gray-300 hover:text-white">Bảo mật thông tin</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-xl font-bold mb-4">Đăng Ký Nhận Tin</h4>
+                    <p class="text-gray-300 mb-4">Nhận thông tin mới nhất về sự kiện và ưu đãi đặc biệt</p>
+                    <div class="flex">
+                        <input type="email" placeholder="Email của bạn" class="px-4 py-2 rounded-l-lg w-full focus:outline-none text-gray-800">
+                        <button class="bg-pink-600 hover:bg-pink-700 px-4 py-2 rounded-r-lg">Đăng ký</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-6 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">© 2025 Mẹ và Bé Marso & Alula Việt Nam. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white">Điều khoản sử dụng</a>
+                    <a href="#" class="text-gray-400 hover:text-white">Chính sách bảo mật</a>
+                    <a href="#" class="text-gray-400 hover:text-white">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
